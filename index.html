@@ -3,43 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Emprendimiento - Tienda Online</title>
+  <title>AURA — Minimal Essentials</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts & FontAwesome para Iconos -->
+  <!-- Tipografía Moderna & Iconos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- Encabezado / Navegación -->
-  <header class="navbar">
-    <div class="logo">
-      <i class="fa-solid fa-bag-shopping"></i> Variedades<span>Pro</span>
-    </div>
-    <nav>
+  <!-- Navegación Flotante Minimalista -->
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <a href="#inicio" class="brand-logo">AURA<span>.</span></a>
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#productos">Colección</a></li>
+        <li><a href="#filosofia">Filosofía</a></li>
       </ul>
+      <a href="https://wa.me/5164123441?text=Hola,%20quisiera%20consultar%20sobre%20sus%20productos." target="_blank" class="nav-cta">Contacto</a>
     </nav>
   </header>
 
-  <!-- Sección Hero / Portada -->
+  <!-- Hero Section -->
   <section id="inicio" class="hero">
     <div class="hero-content">
-      <h1>Descubre Productos Exclusivos para Tu Estilo de Vida</h1>
-      <p>Calidad, variedad e innovación al alcance de un clic. Encuentra todo lo que necesitas en un solo lugar.</p>
-      <a href="#productos" class="btn-primary">Ver Catálogo <i class="fa-solid fa-arrow-right"></i></a>
+      <span class="hero-tag">Edición Limitada 2026</span>
+      <h1>La elegancia de la simplicidad.</h1>
+      <p>Selección curada de artículos cotidianos diseñados con propósito, estética impecable y la más alta funcionalidad.</p>
+      <div class="hero-actions">
+        <a href="#productos" class="btn-primary">Explorar Colección</a>
+      </div>
     </div>
   </section>
 
-  <!-- Catálogo de Productos con Efecto Flip 3D -->
-  <section id="productos" class="catalog-container">
-    <h2 class="section-title">Nuestros Productos Destacados</h2>
-    <p class="section-subtitle">Pasa el cursor sobre una tarjeta o presiona "Ver Detalles" para voltearla</p>
+  <!-- Catálogo de Productos (Cards Flip 3D Minimalistas) -->
+  <section id="productos" class="catalog-section">
+    <div class="section-header">
+      <h2>Productos Destacados</h2>
+      <p>Desliza el cursor sobre cualquier artículo para revelar sus especificaciones técnicas.</p>
+    </div>
 
     <div class="product-grid">
 
@@ -49,33 +53,37 @@
           <!-- Cara Frontal -->
           <div class="card-face card-front">
             <div class="badge">Nuevo</div>
-            <div class="img-container">
-              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Reloj Inteligente">
+            <div class="img-wrapper">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Smartwatch Minimal">
             </div>
-            <div class="product-info">
-              <span class="category">Tecnología</span>
-              <h3>Smartwatch Elegante</h3>
-              <p class="description">Monitoreo de salud, notificaciones y diseño de alta gama en tu muñeca.</p>
-              <div class="price-row">
+            <div class="card-details">
+              <div class="card-meta">
+                <span class="category">Tecnología</span>
                 <span class="price">$49.99</span>
-                <span class="btn-card">Ver Detalles</span>
+              </div>
+              <h3 class="product-title">Smartwatch Minimal</h3>
+              <div class="card-footer-btn">
+                <span class="btn-flip">Ver Detalles <i class="fa-solid fa-arrow-rotate-right"></i></span>
               </div>
             </div>
           </div>
 
-          <!-- Cara Trasera (Detalles Escondidos) -->
-          <div class="card-face card-back" style="--bg-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80');">
+          <!-- Cara Trasera -->
+          <div class="card-face card-back" style="--bg-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80');">
             <div class="back-overlay"></div>
             <div class="back-content">
-              <h3>Detalles del Producto</h3>
-              <ul class="specs-list">
-                <li><i class="fa-solid fa-check"></i> Pantalla AMOLED de 1.43"</li>
-                <li><i class="fa-solid fa-check"></i> Batería de 14 días de duración</li>
-                <li><i class="fa-solid fa-check"></i> Resistencia al agua 5 ATM</li>
-                <li><i class="fa-solid fa-check"></i> GPS de alta precisión incorporado</li>
-              </ul>
-              <a href="https://wa.me/5164123441?text=Hola,%20me%20interesa%20comprar%20el%20Smartwatch%20Elegante" target="_blank" class="btn-buy-now">
-                <i class="fa-brands fa-whatsapp"></i> Comprar por WhatsApp
+              <div>
+                <span class="back-subtitle">Especificaciones</span>
+                <h4>Smartwatch Minimal</h4>
+                <ul class="specs-list">
+                  <li><i class="fa-solid fa-minus"></i> Pantalla OLED Retina de borde a borde</li>
+                  <li><i class="fa-solid fa-minus"></i> Autonomía continua de 14 días</li>
+                  <li><i class="fa-solid fa-minus"></i> Sensor biométrico de última generación</li>
+                  <li><i class="fa-solid fa-minus"></i> Chasis de aluminio aeroespacial</li>
+                </ul>
+              </div>
+              <a href="https://wa.me/5164123441?text=Hola,%20deseo%20comprar%20el%20Smartwatch%20Minimal" target="_blank" class="btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Ordenar por WhatsApp
               </a>
             </div>
           </div>
@@ -87,34 +95,38 @@
         <div class="product-card">
           <!-- Cara Frontal -->
           <div class="card-face card-front">
-            <div class="badge offer">Oferta</div>
-            <div class="img-container">
-              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Audífonos Bluetooth">
+            <div class="badge offer">Destacado</div>
+            <div class="img-wrapper">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Audífonos ANC Studio">
             </div>
-            <div class="product-info">
-              <span class="category">Audio</span>
-              <h3>Audífonos Inalámbricos</h3>
-              <p class="description">Cancelación de ruido activa y batería de hasta 30 horas continuas.</p>
-              <div class="price-row">
+            <div class="card-details">
+              <div class="card-meta">
+                <span class="category">Audio</span>
                 <span class="price">$29.99</span>
-                <span class="btn-card">Ver Detalles</span>
+              </div>
+              <h3 class="product-title">Audífonos ANC Studio</h3>
+              <div class="card-footer-btn">
+                <span class="btn-flip">Ver Detalles <i class="fa-solid fa-arrow-rotate-right"></i></span>
               </div>
             </div>
           </div>
 
-          <!-- Cara Trasera (Detalles Escondidos) -->
-          <div class="card-face card-back" style="--bg-image: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80');">
+          <!-- Cara Trasera -->
+          <div class="card-face card-back" style="--bg-image: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80');">
             <div class="back-overlay"></div>
             <div class="back-content">
-              <h3>Detalles del Producto</h3>
-              <ul class="specs-list">
-                <li><i class="fa-solid fa-check"></i> Cancelación Activa de Ruido (ANC)</li>
-                <li><i class="fa-solid fa-check"></i> Carga rápida USB-C (10 min = 3 horas)</li>
-                <li><i class="fa-solid fa-check"></i> Micrófono HD para llamadas clarísimas</li>
-                <li><i class="fa-solid fa-check"></i> Almohadillas de espuma viscoelástica</li>
-              </ul>
-              <a href="https://wa.me/5164123441?text=Hola,%20me%20interesa%20comprar%20los%20Audífonos%20Inalámbricos" target="_blank" class="btn-buy-now">
-                <i class="fa-brands fa-whatsapp"></i> Comprar por WhatsApp
+              <div>
+                <span class="back-subtitle">Especificaciones</span>
+                <h4>Audífonos ANC Studio</h4>
+                <ul class="specs-list">
+                  <li><i class="fa-solid fa-minus"></i> Cancelación activa de ruido híbrida</li>
+                  <li><i class="fa-solid fa-minus"></i> Audio de alta resolución HD Lossless</li>
+                  <li><i class="fa-solid fa-minus"></i> Estuche con carga ultrarrápida</li>
+                  <li><i class="fa-solid fa-minus"></i> Almohadillas Memory Foam respirables</li>
+                </ul>
+              </div>
+              <a href="https://wa.me/5164123441?text=Hola,%20deseo%20comprar%20los%20Audífonos%20ANC%20Studio" target="_blank" class="btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Ordenar por WhatsApp
               </a>
             </div>
           </div>
@@ -126,33 +138,37 @@
         <div class="product-card">
           <!-- Cara Frontal -->
           <div class="card-face card-front">
-            <div class="img-container">
-              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Mochila Moderna">
+            <div class="img-wrapper">
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" alt="Mochila Urban Commuter">
             </div>
-            <div class="product-info">
-              <span class="category">Accesorios</span>
-              <h3>Mochila Multifuncional</h3>
-              <p class="description">Impermeable, con puerto USB integrado y múltiples compartimentos.</p>
-              <div class="price-row">
+            <div class="card-details">
+              <div class="card-meta">
+                <span class="category">Accesorios</span>
                 <span class="price">$35.00</span>
-                <span class="btn-card">Ver Detalles</span>
+              </div>
+              <h3 class="product-title">Mochila Urban Commuter</h3>
+              <div class="card-footer-btn">
+                <span class="btn-flip">Ver Detalles <i class="fa-solid fa-arrow-rotate-right"></i></span>
               </div>
             </div>
           </div>
 
-          <!-- Cara Trasera (Detalles Escondidos) -->
-          <div class="card-face card-back" style="--bg-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80');">
+          <!-- Cara Trasera -->
+          <div class="card-face card-back" style="--bg-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80');">
             <div class="back-overlay"></div>
             <div class="back-content">
-              <h3>Detalles del Producto</h3>
-              <ul class="specs-list">
-                <li><i class="fa-solid fa-check"></i> Capacidad para laptops de hasta 15.6"</li>
-                <li><i class="fa-solid fa-check"></i> Tela antirrayaduras e impermeable</li>
-                <li><i class="fa-solid fa-check"></i> Puerto externo para Powerbank</li>
-                <li><i class="fa-solid fa-check"></i> Bolsillo antirrobo en el espaldar</li>
-              </ul>
-              <a href="https://wa.me/5164123441?text=Hola,%20me%20interesa%20comprar%20la%20Mochila%20Multifuncional" target="_blank" class="btn-buy-now">
-                <i class="fa-brands fa-whatsapp"></i> Comprar por WhatsApp
+              <div>
+                <span class="back-subtitle">Especificaciones</span>
+                <h4>Mochila Urban Commuter</h4>
+                <ul class="specs-list">
+                  <li><i class="fa-solid fa-minus"></i> Tejido impermeable Cordura® reciclado</li>
+                  <li><i class="fa-solid fa-minus"></i> Compartimento acolchado para Laptop 16"</li>
+                  <li><i class="fa-solid fa-minus"></i> Cierres herméticos YKK de alta seguridad</li>
+                  <li><i class="fa-solid fa-minus"></i> Puerto de carga USB integrado</li>
+                </ul>
+              </div>
+              <a href="https://wa.me/5164123441?text=Hola,%20deseo%20comprar%20la%20Mochila%20Urban%20Commuter" target="_blank" class="btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Ordenar por WhatsApp
               </a>
             </div>
           </div>
@@ -162,21 +178,23 @@
     </div>
   </section>
 
-  <!-- Botón Flotante de WhatsApp -->
-  <a href="https://wa.me/5164123441?text=Hola!%20Deseo%20más%20información%20sobre%20sus%20productos." class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">
+  <!-- Botón Flotante de WhatsApp Minimalista -->
+  <a href="https://wa.me/5164123441?text=Hola!%20Me%20gustaría%20recibir%20información%20sobre%20sus%20productos." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
   <!-- Pie de Página -->
-  <footer id="nosotros">
-    <div class="footer-content">
-      <div class="quote-box">
-        <i class="fa-solid fa-quote-left quote-icon"></i>
-        <p class="motivation-quote">"El éxito no se logra solo con desearlo, sino con la valentía de levantarse cada día a construir tus propios sueños."</p>
+  <footer id="filosofia">
+    <div class="footer-container">
+      <div class="quote-wrapper">
+        <p class="quote-text">"El éxito no se logra solo con desearlo, sino con la valentía de levantarse cada día a construir tus propios sueños."</p>
       </div>
-      <p class="copyright">&copy; 2026 VariedadesPro. Todos los derechos reservados.</p>
+      <div class="footer-bottom">
+        <p class="brand-sub">AURA — Minimal Essentials</p>
+        <p class="copyright">&copy; 2026 Todos los derechos reservados.</p>
+      </div>
     </div>
   </footer>
 
 </body>
-</html></html>
+</html>
