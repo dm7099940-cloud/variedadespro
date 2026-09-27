@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Emprendimiento - Tienda Online</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & FontAwesome para Iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Encabezado / Navegación -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-bag-shopping"></i> Variedades<span>Pro</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Hero / Portada -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Descubre Productos Exclusivos para Tu Estilo de Vida</h1>
+      <p>Calidad, variedad e innovación al alcance de un clic. Encuentra todo lo que necesitas en un solo lugar.</p>
+      <a href="#productos" class="btn-primary">Ver Catálogo <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Catálogo de Productos con Efecto Flip 3D -->
+  <section id="productos" class="catalog-container">
+    <h2 class="section-title">Nuestros Productos Destacados</h2>
+    <p class="section-subtitle">Pasa el cursor sobre una tarjeta o presiona "Ver Detalles" para voltearla</p>
+
+    <div class="product-grid">
+
+      <!-- Producto 1 -->
+      <div class="card-container">
+        <div class="product-card">
+          <!-- Cara Frontal -->
+          <div class="card-face card-front">
+            <div class="badge">Nuevo</div>
+            <div class="img-container">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Reloj Inteligente">
+            </div>
+            <div class="product-info">
+              <span class="category">Tecnología</span>
+              <h3>Smartwatch Elegante</h3>
+              <p class="description">Monitoreo de salud, notificaciones y diseño de alta gama en tu muñeca.</p>
+              <div class="price-row">
+                <span class="price">$49.99</span>
+                <span class="btn-card">Ver Detalles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cara Trasera (Detalles Escondidos) -->
+          <div class="card-face card-back" style="--bg-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80');">
+            <div class="back-overlay"></div>
+            <div class="back-content">
+              <h3>Detalles del Producto</h3>
+              <ul class="specs-list">
+                <li><i class="fa-solid fa-check"></i> Pantalla AMOLED de 1.43"</li>
+                <li><i class="fa-solid fa-check"></i> Batería de 14 días de duración</li>
+                <li><i class="fa-solid fa-check"></i> Resistencia al agua 5 ATM</li>
+                <li><i class="fa-solid fa-check"></i> GPS de alta precisión incorporado</li>
+              </ul>
+              <a href="https://wa.me/5164123441?text=Hola,%20me%20interesa%20comprar%20el%20Smartwatch%20Elegante" target="_blank" class="btn-buy-now">
+                <i class="fa-brands fa-whatsapp"></i> Comprar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="card-container">
+        <div class="product-card">
+          <!-- Cara Frontal -->
+          <div class="card-face card-front">
+            <div class="badge offer">Oferta</div>
+            <div class="img-container">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Audífonos Bluetooth">
+            </div>
+            <div class="product-info">
+              <span class="category">Audio</span>
+              <h3>Audífonos Inalámbricos</h3>
+              <p class="description">Cancelación de ruido activa y batería de hasta 30 horas continuas.</p>
+              <div class="price-row">
+                <span class="price">$29.99</span>
+                <span class="btn-card">Ver Detalles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cara Trasera (Detalles Escondidos) -->
+          <div class="card-face card-back" style="--bg-image: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80');">
+            <div class="back-overlay"></div>
+            <div class="back-content">
+              <h3>Detalles del Producto</h3>
+              <ul class="specs-list">
+                <li><i class="fa-solid fa-check"></i> Cancelación Activa de Ruido (ANC)</li>
+                <li><i class="fa-solid fa-check"></i> Carga rápida USB-C (10 min = 3 horas)</li>
+                <li><i class="fa-solid fa-check"></i> Micrófono HD para llamadas clarísimas</li>
+                <li><i class="fa-solid fa-check"></i> Almohadillas de espuma viscoelástica</li>
+              </ul>
+              <a href="https://wa.me/5164123441?text=Hola,%20me%20interesa%20comprar%20los%20Audífonos%20Inalámbricos" target="_blank" class="btn-buy-now">
+                <i class="fa-brands fa-whatsapp"></i> Comprar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="card-container">
+        <div class="product-card">
+          <!-- Cara Frontal -->
+          <div class="card-face card-front">
+            <div class="img-container">
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Mochila Moderna">
+            </div>
+            <div class="product-info">
+              <span class="category">Accesorios</span>
+              <h3>Mochila Multifuncional</h3>
+              <p class="description">Impermeable, con puerto USB integrado y múltiples compartimentos.</p>
+              <div class="price-row">
+                <span class="price">$35.00</span>
+                <span class="btn-card">Ver Detalles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cara Trasera (Detalles Escondidos) -->
+          <div class="card-face card-back" style="--bg-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80');">
+            <div class="back-overlay"></div>
+            <div class="back-content">
+              <h3>Detalles del Producto</h3>
+              <ul class="specs-list">
+                <li><i class="fa-solid fa-check"></i> Capacidad para laptops de hasta 15.6"</li>
+                <li><i class="fa-solid fa-check"></i> Tela antirrayaduras e impermeable</li>
+                <li><i class="fa-solid fa-check"></i> Puerto externo para Powerbank</li>
+                <li><i class="fa-solid fa-check"></i> Bolsillo antirrobo en el espaldar</li>
+              </ul>
+              <a href="https://wa.me/5164123441?text=Hola,%20me%20interesa%20comprar%20la%20Mochila%20Multifuncional" target="_blank" class="btn-buy-now">
+                <i class="fa-brands fa-whatsapp"></i> Comprar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/5164123441?text=Hola!%20Deseo%20más%20información%20sobre%20sus%20productos." class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Pie de Página -->
+  <footer id="nosotros">
+    <div class="footer-content">
+      <div class="quote-box">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <p class="motivation-quote">"El éxito no se logra solo con desearlo, sino con la valentía de levantarse cada día a construir tus propios sueños."</p>
+      </div>
+      <p class="copyright">&copy; 2026 VariedadesPro. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html></html>
